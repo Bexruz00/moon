@@ -151,8 +151,14 @@
     
 }
 @media (max-width:642px){
+    .space-body{
+        height: 100%;
+    }
+    .hero{
+        padding-bottom:0 ;
+    }
     .ibrohim-hero-section {
-        padding: 48px 24px 90px;
+        padding: 48px 24px 0;
     }
     .ibrohim-site-header{
         padding: 24px;
