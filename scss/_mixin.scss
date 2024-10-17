@@ -1,6 +1,5 @@
 @mixin text($FS, $FW, $LH){
-    font-family: $FF;
-    font-size: $FC;
+    font-size: $FS;
     font-weight: $FW;
     line-height: $LH;
 }
