@@ -1,31 +1,108 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- <link rel="icon" href="Img url here"> -->
-     <link rel="stylesheet" href="./css/main.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="images/logo.png" />
+    <link rel="stylesheet" href="./css/main.css" />
     <title>MOON</title>
-</head>
-<body>
+  </head>
+  <body class="moonbody">
     <!-- Bexruz -->
     <header class="site-header">
-        <div class="container">
-            <div class="header"></div>
+      <div class="header">
+        <div class="headaer__logo">
+          <a href="#"><img src="images/logo.png" /></a>
         </div>
+        <div class="header__menu">
+          <ul>
+            <li>
+              <a onclick="addShow();" href="#"
+                ><span class="header__number">00</span> HOME</a
+              >
+            </li>
+            <li>
+              <a onclick="addShow();" href="#"
+                ><span class="header__number">01</span> DESTINATION</a
+              >
+            </li>
+            <li>
+              <a onclick="addShow();" href="#"
+                ><span class="header__number">02</span> CREW</a
+              >
+            </li>
+            <li>
+              <a onclick="addShow();" href="#"
+                ><span class="header__number">03</span> TECHNOLOGY</a
+              >
+            </li>
+          </ul>
+          <img
+            onclick="addShow();"
+            class="header__close"
+            src="images/close.png"
+          />
+        </div>
+        <span class="header__line"></span>
+        <img onclick="addShow();" class="header__bars" src="images/bar.png" />
+      </div>
     </header>
+
     <main class="site-main">
-        <section class="hero-section">
-            <div class="container">
-                <div class="hero"></div>
-            </div>
-        </section>
-        <!-- section -->
-    </main>
-    <footer class="site-footer">
-        <div class="container">
-            <div class="footer"></div>
+      <div class="hero__word2">
+        <span class="hero__num">01</span>
+        <h2>Pick your destination</h2>
+      </div>
+      <section class="hero-section">
+        <div class="hero__imgWord">
+        <div class="hero__word">
+          <span class="hero__num">01</span>
+          <h2>Pick your destination</h2>
         </div>
+        <div class="hero__img"><img src="images/moon.png" /></div>
+        </div>
+        <div class="hero">
+          <div class="hero__box">
+            <ul>
+              <li tabindex="0"><a href="#">MOON</a></li>
+              <li tabindex="0"><a href="#">MARS</a></li>
+              <li tabindex="0"><a href="#">EUROPA</a></li>
+              <li tabindex="0"><a href="#">TITAN</a></li>
+            </ul>
+            <h1 class="hero__title">MOON</h1>
+            <p class="hero__subtitle">
+              See our planet as you’ve never seen it before. A perfect relaxing
+              trip away to help regain perspective and come back refreshed.
+              While you’re there, take in some history by visiting the Luna 2
+              and Apollo 11 landing sites.
+            </p>
+            <div class="hero__bin">
+              <div class="hero__numbers">
+                <p>AVG. DISTANCE</p>
+                <h3>384,400 km</h3>
+              </div>
+              <div class="hero__numbers">
+                <p>Est. travel time</p>
+                <h3>3 days</h3>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <div class="footer"></div>
+      </div>
     </footer>
-</body>
+
+    <script>
+      let header__menu = document.querySelector(".header__menu");
+
+      function addShow() {
+        header__menu.classList.toggle("show");
+      }
+    </script>
+  </body>
 </html>
